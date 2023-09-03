@@ -1,0 +1,31 @@
+.navbar-nav .nav-item {
+  margin-right: 210px; /* Adjust the margin as needed between nav items*/
+}
+
+.navbar-nav{
+  position: relative;
+  left: 130px;         /* Adjust as needed for nav items to search bar*/
+}
+
+.btn-secondary{
+  position: relative;
+  right: 10px;
+  background-color: rgba(29, 29, 42, 0);
+  border: none;
+}
+
+#Contact-Tab{
+  position: relative;
+  right: 0px;
+  left: 180px;
+}
+
+#Contact-Button{
+  position: relative;
+  left: 220px;
+  top: 450px;
+  height: 60px;
+  width: 170px;
+  font-size: x-large;
+  border-style: double;
+}
