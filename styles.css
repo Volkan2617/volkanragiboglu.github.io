@@ -23,9 +23,69 @@
 #Contact-Button{
   position: relative;
   left: 220px;
-  top: 450px;
+  top: 250px;
   height: 60px;
   width: 170px;
   font-size: x-large;
   border-style: double;
+}
+
+.Home-Tab-Name > ul li{
+  list-style-type: none;
+  position: relative;
+  left: 185px;
+  top: 240px;
+  font-size: 250%;
+}
+
+.highlight-comma {
+  font-family: 'Times New Roman', Times, serif;/* Example: Applying bold style to the comma */
+  /* You can add other styles like color, size, etc. as needed */
+}
+
+.highlight-text{
+  color: rgb(183, 92, 36);
+}
+
+#Contact-Button2{
+  position: relative;
+  left: 220px;
+  top: 240px;
+  font-size: 200%;
+  border: thin;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.button {
+  color: rgb(183, 92, 36);
+  transition: all 500ms;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid rgb(183, 92, 36);
+}
+
+button:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+  outline: 2px solid rgb(183, 92, 36);
+  box-shadow: 2px 3px 10px -2px #ff6f69;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(183, 92, 36);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 500ms;
+}
+
+button:hover::before {
+  width: 200%;
+  background-color: none;
 }
