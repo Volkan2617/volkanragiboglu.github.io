@@ -39,8 +39,7 @@
 }
 
 .highlight-comma {
-  font-family: 'Times New Roman', Times, serif;/* Example: Applying bold style to the comma */
-  /* You can add other styles like color, size, etc. as needed */
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .highlight-text{
@@ -55,6 +54,7 @@
   border: thin;
   border-radius: 10px;
   background-color: transparent;
+  width: 220px;
 }
 
 .button {
@@ -88,4 +88,13 @@ button::before {
 button:hover::before {
   width: 200%;
   background-color: none;
+}
+
+.Contact-Tab > ul li{
+  list-style-type: none;
+  position: relative;
+  top: 100px;
+  left: 250px;
+  font-size: x-large;
+  line-height: 100px;
 }
