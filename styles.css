@@ -57,7 +57,7 @@
   width: 220px;
 }
 
-.button {
+.Contact-Me {
   color: rgb(183, 92, 36);
   transition: all 500ms;
   position: relative;
@@ -65,14 +65,14 @@
   outline: 2px solid rgb(183, 92, 36);
 }
 
-button:hover {
+.Contact-Me:hover {
   color: #ffffff;
   transform: scale(1.05);
   outline: 2px solid rgb(183, 92, 36);
   box-shadow: 2px 3px 10px -2px #ff6f69;
 }
 
-button::before {
+.Contact-Me::before {
   content: "";
   position: absolute;
   left: -50px;
@@ -85,7 +85,7 @@ button::before {
   transition: width 500ms;
 }
 
-button:hover::before {
+.Contact-Me:hover::before {
   width: 200%;
   background-color: none;
 }
