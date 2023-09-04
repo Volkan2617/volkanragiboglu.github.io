@@ -23,12 +23,7 @@
 
     <script src="script.js"></script>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a id="Home-Tab" class="nav-link active" aria-current="page" href="./index.html"></i>Home</a>
@@ -54,21 +49,27 @@
                 <a id="Contact-Tab" class="nav-link active" aria-current="page" href="./ContactTab.html">Contact</a>
               </li>
             </ul>
-            <!-- <form class="d-flex" role="search">
+             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
+            </form> 
           </div>
         </div>
       </nav>
-      <div class="Home-Tab-Name">
-        <ul>
-          <li>Hi<span class="highlight-comma">,</span></li>
-          <li>I'm <span class="highlight-text">Volkan</span><span class="highlight-comma">,</span></li>
-          <li>Web Developer.</li>
-        </ul>
+
+      <div id="Contact-Card" class="card border-primary mb-3">
+        <div class="card-body text-primary">
+          <div class="Home-Tab-Name">
+            <ul>
+              <li>Hi<span class="highlight-comma">,</span></li>
+              <li>I'm <span class="highlight-text">Volkan</span><span class="highlight-comma">,</span></li>
+              <li>Web Developer.</li>
+            </ul>
+          </div>
+          <button id="Contact-Button2" class="Contact-Me button" onclick="location.href='ContactTab.html'">Contact Me
+          </button>
+        </div>
       </div>
-      <button id="Contact-Button2" class="Contact-Me button" onclick="location.href='ContactTab.html'">Contact Me
-      </button>
+      </div>
 </body>
 </html>

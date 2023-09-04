@@ -1,11 +1,12 @@
 .navbar-nav .nav-item {
-  margin-right: 210px; /* Adjust the margin as needed between nav items*/
+  margin-right: 130px; /* Adjust the margin as needed between nav items*/
 }
 
 .navbar-nav{
   position: relative;
-  left: 130px;         /* Adjust as needed for nav items to search bar*/
+  left: 110px;         /* Adjust as needed for nav items to search bar*/
 }
+
 
 .btn-secondary{
   position: relative;
@@ -33,9 +34,10 @@
 .Home-Tab-Name > ul li{
   list-style-type: none;
   position: relative;
-  left: 185px;
-  top: 240px;
+  left: 10px;
+  top: 10px;
   font-size: 250%;
+  color: #ffffff;
 }
 
 .highlight-comma {
@@ -48,8 +50,8 @@
 
 #Contact-Button2{
   position: relative;
-  left: 220px;
-  top: 240px;
+  left: 45px;
+  top: 20px;
   font-size: 200%;
   border: thin;
   border-radius: 10px;
@@ -97,4 +99,13 @@
   left: 250px;
   font-size: x-large;
   line-height: 100px;
+}
+
+#Contact-Card{
+  position: relative;
+  top: 200px;
+  left: 200px;
+  width: 500px;
+  height: 400px;
+  border: none;
 }
