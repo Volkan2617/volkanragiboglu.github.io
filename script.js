@@ -1,13 +1,3 @@
-// function GeneralInfo() {
-//     var infoCard = document.getElementById("GeneralInfoCard");
-
-//     if (infoCard.style.display === "none" || infoCard.style.display === "") {
-//       infoCard.style.display = "block";
-//     } else {
-//       infoCard.style.display = "none";
-//     }
-//   }
-
 // JavaScript to handle tab switching and scrolling
 document.addEventListener("DOMContentLoaded", function () {
     const listItems = document.querySelectorAll(".list-group-item");
@@ -30,3 +20,21 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the button element
+    const toastTrigger = document.getElementById('liveToastBtn');
+
+    // Get the toast element
+    const toastLiveExample = document.getElementById('liveToast');
+
+    if (toastTrigger) {
+        // Create or get the Bootstrap toast instance
+        const toastBootstrap = new bootstrap.Toast(toastLiveExample);
+
+        // Add a click event listener to show the toast when the button is clicked
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show();
+        });
+    }
+});

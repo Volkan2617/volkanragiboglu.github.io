@@ -171,3 +171,90 @@
   max-height: 200px; /* Set a fixed maximum height for the card container */
   overflow-y: scroll; /* Enable vertical scrolling */
 }
+
+#Contact-Tab{
+  left: 100px;
+}
+
+#User-Input1{
+  position: fixed;
+  left: 750px;
+  bottom: 400px;
+  width: 300px;
+}
+
+#User-Input2{
+  position: fixed;
+  left: 750px;
+  bottom: 350px;
+  width: 300px;
+}
+
+#User-Input3{
+  position: fixed;
+  left: 750px;
+  bottom: 275px;
+  width: 300px;
+  resize: vertical;
+}
+
+#liveToastBtn{
+  position: fixed;
+  left: 750px;
+  bottom: 230px;
+}
+
+.dropdown:hover .nav-link {
+  position: relative;
+}
+
+.dropdown .nav-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; /* Change this to your desired underline color */
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown:hover .nav-link::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.custom-button {
+  color: rgb(183, 92, 36);
+  transition: all 500ms;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid rgb(183, 92, 36);
+}
+
+.custom-button:hover {
+  color: #ffffff !important; /* Force the text color to white */
+  transform: scale(1.05);
+  outline: 2px solid rgb(183, 92, 36);
+  box-shadow: 2px 3px 10px -2px #ff6f69;
+}
+
+.custom-button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(183, 92, 36);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 500ms;
+}
+
+.custom-button:hover::before {
+  width: 200%;
+  background-color: none;
+}
