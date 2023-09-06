@@ -48,3 +48,13 @@ window.addEventListener("load", () => {
     document.body.removeChild(loader);
   });
 });
+
+window.addEventListener("load", () => {
+  const loader2 = document.querySelector(".loader2");
+
+  loader2.classList.add("loader2--hidden");
+
+  loader2.addEventListener("transitionend", () => {
+    document.body.removeChild(loader2);
+  });
+});
