@@ -58,3 +58,7 @@ window.addEventListener("load", () => {
     document.body.removeChild(loader2);
   });
 });
+
+function openLinkInNewTab(url) {
+  window.open(url, '_blank');
+}
