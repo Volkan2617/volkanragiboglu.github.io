@@ -958,3 +958,8 @@ body {
   background-color: transparent;
   border: 1px solid transparent;
 }
+
+.card-container {
+  display: flex; /* Use flexbox to arrange cards horizontally */
+  justify-content: space-between; /* Distribute space between cards */
+}
