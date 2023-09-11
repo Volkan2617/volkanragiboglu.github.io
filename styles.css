@@ -922,14 +922,11 @@ body {
 }
 
 .profile-picture{
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
   position: fixed;
   left: 800px;
   bottom: 225px;
   width: 300px;
   height: 300px;
-  border-radius: 50%;
 }
 
 #Card1{
@@ -953,7 +950,7 @@ body {
 #tip {
   padding: 10px 20px;
   position: fixed;
-  top: 400px;
+  top: 500px;
   left: 100px;
   background-color: transparent;
   border: 1px solid transparent;
@@ -962,4 +959,24 @@ body {
 .card-container {
   display: flex; /* Use flexbox to arrange cards horizontally */
   justify-content: space-between; /* Distribute space between cards */
+}
+
+#img{
+  
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 25px; 
+}
+
+#bio-text{
+  position: fixed;
+  left: 550px;
+  top: 100px;
+  width: 650px;
+  height: 600px;
+  font-family: Roboto Slab;
+  font-size: x-large;
 }
