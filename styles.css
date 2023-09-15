@@ -3,12 +3,7 @@ body {
 }
 
 .navbar-nav .nav-item {
-  margin-right: 130px; /* Adjust the margin as needed between nav items*/
-}
-
-.navbar-nav{
-  position: relative;
-  left: 110px;         /* Adjust as needed for nav items to search bar*/
+  margin-right: 200px; /* Adjust the margin as needed between nav items*/
 }
 
 .navbar-nav li.nav-item a.nav-link {
@@ -39,12 +34,6 @@ body {
   right: 10px;
   background-color: rgba(29, 29, 42, 0);
   border: none;
-}
-
-#Contact-Tab{
-  position: relative;
-  right: 0px;
-  left: 180px;
 }
 
 #Contact-Button{
