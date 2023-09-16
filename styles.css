@@ -3,7 +3,8 @@ body {
 }
 
 .navbar-nav .nav-item {
-  margin-right: 200px; /* Adjust the margin as needed between nav items*/
+  margin-right: 110px; /* Adjust the margin as needed between nav items*/
+  margin-left: 80px;
 }
 
 .navbar-nav li.nav-item a.nav-link {
