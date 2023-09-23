@@ -128,10 +128,10 @@ svg{
 
 #Contact-Card{
   position: relative;
-  top: 200px;
+  top: 50px;
   left: 30px;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border: none;
 }
 
@@ -928,39 +928,6 @@ svg{
   height: 300px;
 }
 
-#Card1{
-  position: fixed;
-  top: 150px;
-  left: 150px;
-  max-height: 300px;
-  min-height: 300px;
-  background-color: transparent;
-  font-family: Playfair Display;
-  font-size: 18px;
-}
-
-#Card2{
-  position: fixed;
-  top: 150px;
-  left: 550px;
-  max-height: 300px;
-  min-height: 300px;
-  background-color: transparent;
-  font-family: Playfair Display;
-  font-size: 18px;
-}
-
-#Card3{
-  position: fixed;
-  top: 150px;
-  left: 950px;
-  max-height: 300px;
-  min-height: 300px;
-  background-color: transparent;
-  font-family: Playfair Display;
-  font-size: 18px;
-}
-
 .card-container {
   display: flex; /* Use flexbox to arrange cards horizontally */
   justify-content: space-between; /* Distribute space between cards */
@@ -1007,6 +974,7 @@ svg{
   max-width: 1200px;
   justify-content: center;
   padding: 0 20px;
+  height: 100px;
 }
 
 
@@ -1024,7 +992,7 @@ svg{
   cursor: pointer;
   position: relative;
   top: 200px;
-  font-family: Robot Slab;
+  font-family: Playfair Display;
 }
 
 .card2-icon{
@@ -1062,6 +1030,8 @@ svg{
 @media screen and (max-width:800px) {
   .contact-info{
     flex-direction: column;
+    margin-top: 75px;
+    margin-left: 75px;
   }
   .card2{
     width: 100%;
@@ -1096,7 +1066,7 @@ body {
   padding-top: 25px;   
   height: 0px;
   left: 50px;
-  top: 200px;
+  top: 120px;
 }
 .videowrapper iframe{
   position: absolute;
@@ -1115,8 +1085,8 @@ iframe {
 
 @media (min-width: 768px) {
   .container {
-      display: flex;
-      flex-wrap: wrap-reverse; /* Reverse the order of flex items on large screens */
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
 
   .col-lg-6 {
@@ -1125,7 +1095,84 @@ iframe {
   }
 
   .videowrapper {
-      flex: 1; /* Make the video take equal width on large screens */
-      margin-left: 0px; /* Adjust the margin as needed */
+    flex: 1; /* Make the video take equal width on large screens */
+    margin-left: 0px; /* Adjust the margin as needed */
   }
+}
+
+#Project-Cards {
+  background-color: transparent;
+  border-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  top: 150px;
+  left: 100px;
+  max-height: 250px;
+  min-height: 200px;
+  min-width: 300px;
+  max-width: 300px;
+  background-color: transparent;
+  font-family: Playfair Display;
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#Project-Cards:hover {
+  transform: scale(1.05);
+}
+
+#Project-Cards img {
+  width: 100%;
+  height: auto;
+}
+
+#Project-Cards .card-content {
+  padding: 20px;
+}
+
+#Project-Cards h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#Project-Cards p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+#Project-Cards a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+#Project-Cards .card-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Project-Cards button {
+  flex: 1;
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  #Project-Cards {
+      max-width: 100%;
+      left: 0px;
+      top: 0px;
+  }
+
+  .form-box{
+    max-width: 500px;
+  }
+
+  #liveToastBtn{
+    max-width: 400px;
+  }
+
+  
 }
