@@ -6,9 +6,10 @@
     <title>Volkan B Ragiboglu</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
-  <body>
+  <body style="max-height: 500px; max-width: 1400px;">
     <div id="navbar-container" class="navbar-container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
@@ -34,13 +35,7 @@
                       </svg>
                       Bio</a>
                   </li>
-                  <!-- <li class="nav-item">
-                    <a id="Skils-Tab" class="nav-link active" aria-current="page" href="./SkillsTab.html">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16" style="display: flex; align-items: center;">
-                        <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
-                      </svg>
-                      Skills</a>
-                  </li> -->
+                  
                   <li class="nav-item">
                     <a style="color: white;" id="Projects-Tab" class="nav-link active" aria-current="page" href="./Projects.html">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16" style="display: flex; align-items: center;">
@@ -60,15 +55,93 @@
         </div>
       </nav>
     </div>
-  <img id="img" src="./IMG2.png">
-  <div>
-     <p id="bio-text">Hi, I'm Volkan B Ragiboglu, a Web Developer with a passion for coding and technology. I specialize in HTML5, CSS with Bootstra and JavaScript. You can find me on GitHub as (https://github.com/VolkanRagiboglu) and connect with me on LinkedIn at http://linkedin.com/in/volkanragiboglu. Feel free to reach out to me via Cell Phone (570) - 856 4349, and let's collaborate on exciting projects!</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card shadow">
+          <img src="./IMG2.png" class="card-img-top" alt="Volkan Ragiboglu">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Hi, I'm Volkan B Ragiboglu, a Web Developer with a passion for coding and technology. I specialize in HTML5, CSS with Bootstrap, and JavaScript. You can find me on GitHub as <a href="https://github.com/VolkanRagiboglu" target="_blank">https://github.com/VolkanRagiboglu</a> and connect with me on LinkedIn <a href="http://linkedin.com/in/volkanragiboglu" target="_blank">http://linkedin.com/in/volkanragiboglu</a>. Let's collaborate on exciting projects!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carousel" class="shadow carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" onclick="selectSlide(0)"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2" onclick="selectSlide(1)"></button>
+    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3" onclick="selectSlide(2)"></button>
   </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <div class="carousel-caption top-0 mt-4">
+            <h5>HTML</h5>
+            <p>
+              I have gained extensive experience in HTML, a fundamental language for web development. 
+          I have demonstrated proficiency in creating and structuring web content using HTML. Here are some key highlights of my HTML experience:
+            </p>
+            <ol>
+              <li>HTML5 Proficiency: I have a strong command of HTML5, the latest version of the language, which allows me to implement modern and semantic markup for web pages.</li>
+              <li>Responsive Design: I have experience in developing responsive web pages that adapt seamlessly to different screen sizes and devices, including desktops, tablets, and mobile phones.</li>
+              <li>HTML Forms: I have created interactive and user-friendly web forms using HTML, incorporating elements such as text inputs, radio buttons, checkboxes, and dropdown menus to collect user data.</li>
+              <li>Integration with CSS: I have collaborated with CSS (Cascading Style Sheets) to style and format HTML elements, achieving visually appealing and consistent designs.</li>
+              <li>Collaboration: I have effectively collaborated with frontend developers, designers, and other team members to integrate HTML with other technologies and achieve project goals.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <div class="carousel-caption top-0 mt-4">
+            <h5>CSS with Bootstrap</h5>
+            <p>
+              I have developed a strong expertise in Cascading Style Sheets (CSS), a critical technology for web development that allows me to enhance the presentation and layout of web pages. 
+                Here's an overview of my CSS experience:
+            </p>
+            <ol>
+              <li>CSS3 Mastery: I am proficient in CSS3, including its latest features and capabilities, enabling me to create modern and visually appealing website designs.</li>
+              <li>Responsive Design: I specialize in responsive web design, 
+                using CSS media queries to ensure that websites adapt seamlessly to different screen sizes and devices, providing an optimal user experience.</li>
+              <li>CSS Frameworks: I have experience with CSS frameworks such as Bootstrap, 
+                which enables rapid development and consistency in web design by leveraging pre-designed CSS classes and components.</li>
+              <li>Flexbox and Grid Layout: I am skilled in using CSS Flexbox and Grid layout techniques to create complex and flexible page layouts, 
+                making it easier to organize content and achieve desired designs.</li>
+              <li>Custom Styling: I can create custom styles for HTML elements, including typography, color schemes, spacing, and border styles, 
+                to achieve unique and visually appealing designs.</li>
+                <li>Maintainable CSS: I follow best practices for writing clean and maintainable CSS code, including proper indentation, 
+                  organization, and commenting, which aids in collaboration and future updates.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <div class="carousel-caption top-0 mt-4">
+            <h4>JavaScript</h4>
+            <p>My extensive experience in JavaScript, a versatile and dynamic scripting language, enables me to enhance web functionality 
+              and create interactive and dynamic user experiences. Here is an overview of my JavaScript experience:</p>
+              <ol>
+                <li>Core JavaScript Proficiency: I possess a strong foundation in core JavaScript, including its syntax, data types, and fundamental concepts, allowing me to write clean and efficient code.</li>
+                <li>DOM Manipulation: I am skilled in manipulating the Document Object Model (DOM) to dynamically update and modify web page content, improving user interactivity and responsiveness.</li>
+                <li>Event Handling: I have experience handling various events, such as user clicks, keyboard inputs, and form submissions, using event listeners to trigger actions and responses within web applications.</li>
+                <li>Frontend Frameworks and Libraries: I have experience with popular JavaScript frameworks and libraries such as React, Angular, and Vue.js, enabling me to build scalable and interactive web applications.</li>
+                <li>Browser Storage: I utilize browser storage mechanisms, including localStorage and sessionStorage, to store and manage data on the client side, providing persistent user experiences.</li>
+                <li>Unit Testing: I have experience writing unit tests for JavaScript code using testing frameworks like Jest or Mocha, ensuring code reliability and maintainability.</li>
+                <li>Continuous Learning: I stay updated with the latest JavaScript trends, libraries, and frameworks to apply innovative solutions and best practices in my work.</li>
+              </ol>
+          </div>
+        </div>
+      </div>
+      <button style="display: flex; right: 0px;" class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button style="display: flex; left: 700px;" class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
       <div class="loader"></div>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>

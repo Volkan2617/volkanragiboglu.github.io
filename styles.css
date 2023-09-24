@@ -933,16 +933,6 @@ svg{
   justify-content: space-between; /* Distribute space between cards */
 }
 
-#img{
-  
-  position: fixed;
-  top: 100px;
-  left: 100px;
-  width: 250px;
-  height: 250px;
-  border-radius: 25px; 
-}
-
 #bio-text{
   position: fixed;
   left: 550px;
@@ -1159,6 +1149,10 @@ iframe {
   margin: 0 5px;
 }
 
+#bio-text {
+  font-size: 16px;
+}
+
 @media (max-width: 768px) {
   #Project-Cards {
       max-width: 100%;
@@ -1173,6 +1167,40 @@ iframe {
   #liveToastBtn{
     max-width: 400px;
   }
+}
 
-  
+img {
+  margin-top: 40px;
+  max-width: 60%;
+  height: auto;
+  display: flex;
+  margin-left: 90px;
+}
+
+.card{
+  background-color: transparent;
+  margin: 20px;
+}
+
+.card-text{
+  color: white;
+  font-family: Playfair Display;
+}
+
+.carousel{
+  display: flex;
+  left: 500px;
+  bottom: 550px;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.c-item {
+  height: 530px;
+  width: 800px;
+}
+
+.carousel-caption {
+  max-height: 530px;
+  overflow-y: auto;
 }

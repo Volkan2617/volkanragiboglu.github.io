@@ -1,4 +1,3 @@
-// JavaScript to handle tab switching and scrolling
 document.addEventListener("DOMContentLoaded", function () {
     const listItems = document.querySelectorAll(".list-group-item");
     const tabContents = document.querySelectorAll(".tab-pane");
@@ -15,24 +14,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         targetTab.classList.add("show", "active");
 
-        // Scroll to the selected tab content
         targetTab.scrollIntoView({ behavior: "smooth" });
       });
     });
   });
 
   document.addEventListener("DOMContentLoaded", function () {
-    // Get the button element
     const toastTrigger = document.getElementById('liveToastBtn');
 
-    // Get the toast element
     const toastLiveExample = document.getElementById('liveToast');
 
     if (toastTrigger) {
-        // Create or get the Bootstrap toast instance
         const toastBootstrap = new bootstrap.Toast(toastLiveExample);
-
-        // Add a click event listener to show the toast when the button is clicked
         toastTrigger.addEventListener('click', () => {
             toastBootstrap.show();
         });
@@ -62,3 +55,31 @@ window.addEventListener("load", () => {
 function openLinkInNewTab(url) {
   window.open(url, '_blank');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const prevButton = document.querySelector('.carousel-control-prev');
+  const nextButton = document.querySelector('.carousel-control-next');
+  const carousel = new bootstrap.Carousel(document.getElementById('carousel'));
+
+  prevButton.addEventListener('click', function() {
+    carousel.prev();
+  });
+
+  nextButton.addEventListener('click', function() {
+    carousel.next();
+  });
+});
+
+function selectSlide(index) {
+  const carousel = document.getElementById('carousel');
+  const carouselInstance = new bootstrap.Carousel(carousel);
+  carouselInstance.to(index);
+}
+
+// Add event listeners to the indicator buttons
+const indicatorButtons = document.querySelectorAll('.carousel-indicators button');
+indicatorButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    selectSlide(index);
+  });
+});
