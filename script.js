@@ -76,7 +76,6 @@ function selectSlide(index) {
   carouselInstance.to(index);
 }
 
-// Add event listeners to the indicator buttons
 const indicatorButtons = document.querySelectorAll('.carousel-indicators button');
 indicatorButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
