@@ -1030,7 +1030,6 @@ svg{
   }
 }
 
-/* styles.css */
 body {
   background-color: #25272a; /* Use the dark color code of your choice */
   color: #fff; /* Set text color to white or a contrasting color */
@@ -1091,8 +1090,7 @@ iframe {
 }
 
 #Project-Cards {
-  background-color: transparent;
-  border-color: white;
+  background-color: #2f3542;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -1103,7 +1101,6 @@ iframe {
   min-height: 200px;
   min-width: 300px;
   max-width: 300px;
-  background-color: transparent;
   font-family: Playfair Display;
   font-size: 18px;
   transition: transform 0.2s ease-in-out;
@@ -1178,7 +1175,7 @@ img {
 }
 
 .card{
-  background-color: transparent;
+  background-color: #2f3542;
   margin: 20px;
 }
 
@@ -1187,12 +1184,13 @@ img {
   font-family: Playfair Display;
 }
 
-.carousel{
+.carousel {
   display: flex;
-  left: 500px;
   bottom: 550px;
+  left: 200px;
   max-width: 800px;
-  max-height: 600px;
+  margin: 0 auto;
+  background-color: #2f3542;
 }
 
 .c-item {
@@ -1203,4 +1201,23 @@ img {
 .carousel-caption {
   max-height: 530px;
   overflow-y: auto;
+  font-family: Playfair Display;
+}
+
+@media (max-width: 767px) {
+  .carousel {
+      flex-direction: column;
+      max-height: none;
+      max-width: none;
+      bottom: 0px;
+      left: 0px;
+  }
+
+  .c-item {
+      width: 100%;
+  }
+
+  .carousel-inner {
+      padding: 15px; /* Add spacing between items */
+  }
 }
