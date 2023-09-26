@@ -1179,7 +1179,7 @@ img {
   margin: 20px;
   display: flex;
   left: 30px;
-  top: 100px;
+  top: 50px;
 }
 
 .card-text{
@@ -1189,7 +1189,7 @@ img {
 
 #carousel{
   left: 100px;
-  top: 100px;
+  top: 50px;
   width: 500px;
   width: 200%;
   height: 600px;
